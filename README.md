@@ -53,6 +53,6 @@ Go to your repository → Actions → select the workflow → click Run workflow
 
 ## Customization
 
-  - Modify /visit-website/visitWebsite.js if you want to simulate different user interactions.
-  - Extend /visit-website/websites.json with any number of URLs.
+  - Modify `/visit-website/visitWebsite.js` if you want to simulate different user interactions.
+  - Extend `/visit-website/websites.json` with any number of URLs.
   - Combine with other workflows for broader E5 activity coverage.
