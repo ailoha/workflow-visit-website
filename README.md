@@ -20,7 +20,7 @@ You can edit this file if you want to adjust delays, add more interactions, or s
 
 ## Configuration
 
-### 1.Add Your Websites
+### 1. Add Your Websites
 
 Edit `/visit-website/websites.json` and put the URLs you want to be visited.
 
@@ -32,13 +32,13 @@ Example:
 ]
 ```
 
-### 2.Enable the Workflow
+### 2. Enable the Workflow
 
 The GitHub Actions workflow (.github/workflows/visit.yml) is set up for manual or scheduled runs.
 
 To run it daily, configure the schedule section with a cron expression (e.g., every day at 04:00 Beijing time).
 
-### 3.Run Manually (Optional)
+### 3. Run Manually (Optional)
 
 Go to your repository → Actions → select the workflow → click Run workflow.
 
