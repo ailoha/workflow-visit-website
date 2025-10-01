@@ -1,8 +1,10 @@
 # workflow-visit-website
 
+English | [中文简体](./README.zh-CN.md)
+
 This GitHub Actions workflow is designed to keep Microsoft 365 E5 developer subscriptions active by simulating daily website visits.
 
-It works by automatically visiting pages deployed with onedrive-index, which in turn calls the Microsoft Graph API behind the scenes. This ensures your E5 tenant remains active.
+It works by automatically visiting pages deployed with [onedrive-index](https://github.com/iRedScarf/onedrive-index), which in turn calls the Microsoft Graph API behind the scenes. This ensures your E5 tenant remains active.
 
 ## How It Works
 
@@ -34,7 +36,7 @@ Example:
 
 ### 2. Enable the Workflow
 
-The GitHub Actions workflow (.github/workflows/visit.yml) is set up for manual or scheduled runs.
+The GitHub Actions workflow `.github/workflows/visit.yml` is set up for manual or scheduled runs.
 
 To run it daily, configure the schedule section with a cron expression (e.g., every day at 04:00 Beijing time).
 
@@ -55,4 +57,4 @@ Go to your repository → Actions → select the workflow → click Run workflow
 
   - Modify `/visit-website/visitWebsite.js` if you want to simulate different user interactions.
   - Extend `/visit-website/websites.json` with any number of URLs.
-  - Combine with other workflows for broader E5 activity coverage.
+  - Combine with other workflows (e.g., [workflow-m365-audit-logs](https://github.com/ailoha/workflow-m365-audit-logs)) for broader E5 activity coverage.
